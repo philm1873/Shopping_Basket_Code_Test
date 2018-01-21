@@ -15,6 +15,10 @@ public class Item {
         return name;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
     public boolean isBogof() {
         return bogof;
     }

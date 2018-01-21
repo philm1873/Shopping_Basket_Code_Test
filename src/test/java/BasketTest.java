@@ -38,6 +38,7 @@ public class BasketTest {
         testBasket.AddItemToBasket(testItemOne);
         testBasket.AddItemToBasket(testItemTwo);
         assertEquals(2, testBasket.numberOfItemsInBasket());
+        assertEquals(4.25, testBasket.getTotal(), 0.01);
     }
 
     @Test
@@ -47,6 +48,7 @@ public class BasketTest {
         assertEquals(2, testBasket.numberOfItemsInBasket());
         testBasket.removeItemFromBasket(testItemTwo);
         assertEquals(1, testBasket.numberOfItemsInBasket());
+        assertEquals(2.75, testBasket.getTotal(), 0.01);
     }
 
     @Test
@@ -56,6 +58,7 @@ public class BasketTest {
         assertEquals(2, testBasket.numberOfItemsInBasket());
         testBasket.emptyBasket();
         assertEquals(0, testBasket.numberOfItemsInBasket());
+        assertEquals(0, testBasket.getTotal(), 0.01);
     }
 
     @Test

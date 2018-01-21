@@ -1,21 +1,25 @@
 package discounts;
 
-import basket.Basket;
 import basket.Item;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
-import java.util.Set;
 
 public class Bogof implements IDiscount {
 
     @Override
-    public void applyDiscount(ArrayList<Item> items, double total) {
-        ArrayList<Item> bogofItems = getItemsThatAreBogof(items);
+    public double applyDiscount(ArrayList<Item> items, double total) {
+        HashSet<Item> bogofItems = getItemsThatAreBogof(items);
+        for (Item item : bogofItems) {
+            int occurrenceBogofItem = Collections.frequency(items, item);
+            total -= occurrenceBogofItem/2 * item.getPrice();
+        }
+        return total;
     }
 
-    private ArrayList<Item> getItemsThatAreBogof(ArrayList<Item> items) {
-        ArrayList<Item> bogofItems = new ArrayList<>();
+    private HashSet<Item> getItemsThatAreBogof(ArrayList<Item> items) {
+        HashSet<Item> bogofItems = new HashSet<>();
         for (Item item : items) {
             if (item.isBogof()) {
                 bogofItems.add(item);
@@ -24,13 +28,6 @@ public class Bogof implements IDiscount {
         return bogofItems;
     }
 
-    private Set<String> getUniqueBogofItems(ArrayList<Item> items) {
-        Set<String> uniqueBogofItems = new HashSet<>();
-        for (Item item : items) {
-            uniqueBogofItems.add(item.getName());
-        }
-        return uniqueBogofItems;
-    }
 
     @Override
     public boolean equals(Object object) {

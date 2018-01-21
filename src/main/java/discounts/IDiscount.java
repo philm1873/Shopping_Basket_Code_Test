@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public interface IDiscount extends Comparable<IDiscount> {
 
-    void applyDiscount(ArrayList<Item> items, double total);
+    double applyDiscount(ArrayList<Item> items, double total);
 
     boolean equals(Object object);
 

@@ -3,7 +3,6 @@ package basket;
 import discounts.*;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.TreeSet;
 
 public class Basket {
@@ -39,14 +38,17 @@ public class Basket {
 
     public void AddItemToBasket(Item item) {
         this.items.add(item);
+        this.total += item.getPrice();
     }
 
     public void removeItemFromBasket(Item item) {
         this.items.remove(item);
+        this.total -= item.getPrice();
     }
 
     public void emptyBasket() {
         this.items.clear();
+        this.total = 0;
     }
 
     public void addDiscount(IDiscount discount) {
