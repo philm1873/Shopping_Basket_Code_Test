@@ -13,6 +13,7 @@ public class BasketTest {
     private Basket testBasket;
     private Item testItemOne;
     private Item testItemTwo;
+    private Item testItemThree;
     private Bogof testBogofOne;
     private Bogof testBogofTwo;
     private LoyaltyCard testLoyaltyCardOne;
@@ -25,6 +26,7 @@ public class BasketTest {
         testBasket = new Basket();
         testItemOne = new Item("Burger", 2.75, true);
         testItemTwo = new Item("Cheese", 1.50, false);
+        testItemThree = new Item("Steak", 20.50, false);
         testBogofOne = new Bogof();
         testBogofTwo = new Bogof();
         testLoyaltyCardOne = new LoyaltyCard();
@@ -103,5 +105,52 @@ public class BasketTest {
         testBasket.addDiscount(testLoyaltyCardOne);
         assertEquals(testBogofOne, testBasket.getDiscounts().first());
         assertEquals(testLoyaltyCardOne, testBasket.getDiscounts().last());
+    }
+
+    @Test
+    public void applyDiscountsBogofAndLoyalty() {
+        testBasket.AddItemToBasket(testItemOne);
+        testBasket.AddItemToBasket(testItemTwo);
+        testBasket.AddItemToBasket(testItemOne);
+        testBasket.addDiscount(testBogofOne);
+        testBasket.addDiscount(testLoyaltyCardOne);
+        testBasket.applyDiscounts();
+        assertEquals(4.165, testBasket.getTotal(), 0.01);
+    }
+
+    @Test
+    public void applyDiscountsBogofAndPercentOff() {
+        testBasket.AddItemToBasket(testItemOne);
+        testBasket.AddItemToBasket(testItemTwo);
+        testBasket.AddItemToBasket(testItemOne);
+        testBasket.AddItemToBasket(testItemThree);
+        testBasket.addDiscount(testBogofOne);
+        testBasket.addDiscount(testPercentOffOne);
+        testBasket.applyDiscounts();
+        assertEquals(22.275, testBasket.getTotal(), 0.01);
+    }
+
+    @Test
+    public void applyDiscountsPercentOffAndLoyalty() {
+        testBasket.AddItemToBasket(testItemOne);
+        testBasket.AddItemToBasket(testItemTwo);
+        testBasket.AddItemToBasket(testItemThree);
+        testBasket.addDiscount(testLoyaltyCardOne);
+        testBasket.addDiscount(testPercentOffOne);
+        testBasket.applyDiscounts();
+        assertEquals(21.83, testBasket.getTotal(), 0.01);
+    }
+
+    @Test
+    public void applyDiscountsAll() {
+        testBasket.AddItemToBasket(testItemOne);
+        testBasket.AddItemToBasket(testItemOne);
+        testBasket.AddItemToBasket(testItemTwo);
+        testBasket.AddItemToBasket(testItemThree);
+        testBasket.addDiscount(testLoyaltyCardOne);
+        testBasket.addDiscount(testPercentOffOne);
+        testBasket.addDiscount(testBogofOne);
+        testBasket.applyDiscounts();
+        assertEquals(21.83, testBasket.getTotal(), 0.01);
     }
 }

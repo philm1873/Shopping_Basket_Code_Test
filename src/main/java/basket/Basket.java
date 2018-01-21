@@ -58,4 +58,10 @@ public class Basket {
     public int numberOfDiscounts() {
         return this.discounts.size();
     }
+
+    public void applyDiscounts() {
+        for (IDiscount discount : this.discounts) {
+            this.total = discount.applyDiscount(this.items, this.total);
+        }
+    }
 }
