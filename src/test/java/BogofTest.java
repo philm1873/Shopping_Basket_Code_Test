@@ -1,8 +1,6 @@
 import basket.Basket;
 import basket.Item;
 import discounts.Bogof;
-import discounts.LoyaltyCard;
-import discounts.PercentOff;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,8 +11,7 @@ public class BogofTest {
     private Item testItemOne;
     private Item testItemTwo;
     private Bogof testBogofOne;
-    private LoyaltyCard testLoyaltyCardOne;
-    private PercentOff testPercentOffOne;
+
 
     @Before
     public void before() {
@@ -25,11 +22,7 @@ public class BogofTest {
         testBasket.AddItemToBasket(testItemTwo);
         testBasket.AddItemToBasket(testItemOne);
         testBogofOne = new Bogof();
-        testLoyaltyCardOne = new LoyaltyCard();
-        testPercentOffOne = new PercentOff();
         testBasket.addDiscount(testBogofOne);
-        testBasket.addDiscount(testLoyaltyCardOne);
-        testBasket.addDiscount(testPercentOffOne);
     }
 
     @Test
