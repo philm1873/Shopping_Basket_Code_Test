@@ -5,14 +5,22 @@ import discounts.*;
 import java.util.ArrayList;
 
 public class Basket {
-    ArrayList<Item> items;
-    ArrayList<Discount> discounts;
-    double total;
+    private ArrayList<Item> items;
+    private ArrayList<Discount> discounts;
+    private double total;
 
 
     public Basket() {
         items = new ArrayList<>();
         discounts = new ArrayList<>();
+    }
+
+    public double getTotal() {
+        return this.total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
     }
 
     public int numberOfItemsInBasket() {
