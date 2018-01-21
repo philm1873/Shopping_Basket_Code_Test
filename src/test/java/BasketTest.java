@@ -10,21 +10,27 @@ import static org.junit.Assert.assertEquals;
 
 
 public class BasketTest {
-    Basket testBasket;
-    Item testItemOne;
-    Item testItemTwo;
-    Bogof testBogof;
-    LoyaltyCard testLoyaltyCard;
-    PercentOff testPercentOff;
+    private Basket testBasket;
+    private Item testItemOne;
+    private Item testItemTwo;
+    private Bogof testBogofOne;
+    private Bogof testBogofTwo;
+    private LoyaltyCard testLoyaltyCardOne;
+    private LoyaltyCard testLoyaltyCardTwo;
+    private PercentOff testPercentOffOne;
+    private PercentOff testPercentOffTwo;
 
     @Before
     public void before() {
         testBasket = new Basket();
-        testItemOne = new Item("Burger");
-        testItemTwo = new Item("Cheese");
-        testBogof = new Bogof();
-        testLoyaltyCard = new LoyaltyCard();
-        testPercentOff = new PercentOff();
+        testItemOne = new Item("Burger", 2.75, true);
+        testItemTwo = new Item("Cheese", 1.50, false);
+        testBogofOne = new Bogof();
+        testBogofTwo = new Bogof();
+        testLoyaltyCardOne = new LoyaltyCard();
+        testLoyaltyCardTwo = new LoyaltyCard();
+        testPercentOffOne = new PercentOff();
+        testPercentOffTwo = new PercentOff();
     }
 
     @Test
@@ -54,7 +60,36 @@ public class BasketTest {
 
     @Test
     public void canAddDiscount() {
-        testBasket.addDiscount(testBogof);
+        testBasket.addDiscount(testBogofOne);
+        assertEquals(1, testBasket.numberOfDiscounts());
+    }
+
+    @Test
+    public void canAddMoreThanOneDiscount() {
+        testBasket.addDiscount(testBogofOne);
+        testBasket.addDiscount(testLoyaltyCardOne);
+        testBasket.addDiscount(testPercentOffOne);
+        assertEquals(3, testBasket.numberOfDiscounts());
+    }
+
+    @Test
+    public void canOnlyAddOneBogof() {
+        testBasket.addDiscount(testBogofOne);
+        testBasket.addDiscount(testBogofTwo);
+        assertEquals(1, testBasket.numberOfDiscounts());
+    }
+
+    @Test
+    public void canOnlyAddOneLoyaltyCard() {
+        testBasket.addDiscount(testLoyaltyCardOne);
+        testBasket.addDiscount(testLoyaltyCardTwo);
+        assertEquals(1, testBasket.numberOfDiscounts());
+    }
+
+    @Test
+    public void canOnlyAddOnePercentOff() {
+        testBasket.addDiscount(testPercentOffOne);
+        testBasket.addDiscount(testPercentOffTwo);
         assertEquals(1, testBasket.numberOfDiscounts());
     }
 }

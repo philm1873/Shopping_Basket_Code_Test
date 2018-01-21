@@ -3,16 +3,21 @@ package basket;
 import discounts.*;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Basket {
     private ArrayList<Item> items;
-    private ArrayList<Discount> discounts;
+    private HashSet<IDiscount> discounts;
     private double total;
 
 
     public Basket() {
         items = new ArrayList<>();
-        discounts = new ArrayList<>();
+        discounts = new HashSet<>();
+    }
+
+    public ArrayList<Item> getItems() {
+        return items;
     }
 
     public double getTotal() {
@@ -39,7 +44,7 @@ public class Basket {
         this.items.clear();
     }
 
-    public void addDiscount(Discount discount) {
+    public void addDiscount(IDiscount discount) {
         this.discounts.add(discount);
     }
 
