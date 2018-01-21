@@ -19,4 +19,8 @@ public class Basket {
     public void removeItemFromBasket(Item item) {
         this.items.remove(item);
     }
+
+    public void emptyBasket() {
+        this.items.clear();
+    }
 }

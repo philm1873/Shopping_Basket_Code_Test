@@ -31,4 +31,13 @@ public class BasketTest {
         testBasket.removeItemFromBasket(testItemTwo);
         assertEquals(1, testBasket.numberOfItemsInBasket());
     }
+
+    @Test
+    public void canEmptyBasket() {
+        testBasket.AddItemToBasket(testItemOne);
+        testBasket.AddItemToBasket(testItemTwo);
+        assertEquals(2, testBasket.numberOfItemsInBasket());
+        testBasket.emptyBasket();
+        assertEquals(0, testBasket.numberOfItemsInBasket());
+    }
 }

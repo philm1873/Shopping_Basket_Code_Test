@@ -25,8 +25,8 @@
       <file leaf-file-name="Basket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Basket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+            <state relative-caret-position="345">
+              <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding>
                 <element signature="e#100#101#0" expanded="true" />
                 <element signature="e#141#142#0" expanded="true" />
@@ -36,6 +36,8 @@
                 <element signature="e#305#306#0" expanded="true" />
                 <element signature="e#356#357#0" expanded="true" />
                 <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,8 +56,8 @@
       <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="396">
+              <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -461,7 +463,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BasketTest.canRemoveItemFromBasket">
+  <component name="RunManager" selected="JUnit.BasketTest.canEmptyBasket">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -490,6 +492,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BasketTest" />
       <option name="METHOD_NAME" value="canAddItemToBasket" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="BasketTest.canEmptyBasket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ShoppingBasket_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BasketTest" />
+      <option name="METHOD_NAME" value="canEmptyBasket" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -582,14 +604,16 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canAddItemToBasket" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canRemoveItemFromBasket" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canEmptyBasket" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canRemoveItemFromBasket" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canAddItemToBasket" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest.canEmptyBasket" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BasketTest.canRemoveItemFromBasket" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BasketTest.canAddItemToBasket" />
       </list>
     </recent_temporary>
   </component>
@@ -615,6 +639,9 @@
     </history-entry>
     <history-entry file="BasketTest_canAddItemToBasket - 2018.01.21 at 00h 23m 52s.xml">
       <configuration name="BasketTest.canAddItemToBasket" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_canEmptyBasket - 2018.01.21 at 00h 33m 33s.xml">
+      <configuration name="BasketTest.canEmptyBasket" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BasketTest_canRemoveItemFromBasket - 2018.01.21 at 00h 29m 53s.xml">
       <configuration name="BasketTest.canRemoveItemFromBasket" configurationId="JUnit" />
@@ -680,8 +707,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Basket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        <state relative-caret-position="345">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="e#100#101#0" expanded="true" />
             <element signature="e#141#142#0" expanded="true" />
@@ -691,14 +718,16 @@
             <element signature="e#305#306#0" expanded="true" />
             <element signature="e#356#357#0" expanded="true" />
             <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="396">
+          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
