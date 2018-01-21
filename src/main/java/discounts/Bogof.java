@@ -10,8 +10,8 @@ import java.util.Set;
 public class Bogof implements IDiscount {
 
     @Override
-    public void applyDiscount(Basket basket) {
-        ArrayList<Item> bogofItems = getItemsThatAreBogof(basket.getItems());
+    public void applyDiscount(ArrayList<Item> items, double total) {
+        ArrayList<Item> bogofItems = getItemsThatAreBogof(items);
     }
 
     private ArrayList<Item> getItemsThatAreBogof(ArrayList<Item> items) {

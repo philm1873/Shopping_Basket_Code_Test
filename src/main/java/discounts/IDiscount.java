@@ -1,10 +1,13 @@
 package discounts;
 
 import basket.Basket;
+import basket.Item;
+
+import java.util.ArrayList;
 
 public interface IDiscount extends Comparable<IDiscount> {
 
-    void applyDiscount(Basket basket);
+    void applyDiscount(ArrayList<Item> items, double total);
 
     boolean equals(Object object);
 

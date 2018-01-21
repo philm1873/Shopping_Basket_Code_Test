@@ -1,10 +1,12 @@
 package discounts;
 
-import basket.Basket;
+import basket.Item;
+
+import java.util.ArrayList;
 
 public class LoyaltyCard implements IDiscount {
     @Override
-    public void applyDiscount(Basket basket) {
+    public void applyDiscount(ArrayList<Item> items, double total) {
 
     }
 
