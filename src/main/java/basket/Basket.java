@@ -1,13 +1,18 @@
 package basket;
 
+import discounts.*;
+
 import java.util.ArrayList;
 
 public class Basket {
     ArrayList<Item> items;
+    ArrayList<Discount> discounts;
+    double total;
 
 
     public Basket() {
         items = new ArrayList<>();
+        discounts = new ArrayList<>();
     }
 
     public int numberOfItemsInBasket() {
@@ -24,5 +29,13 @@ public class Basket {
 
     public void emptyBasket() {
         this.items.clear();
+    }
+
+    public void addDiscount(Discount discount) {
+        this.discounts.add(discount);
+    }
+
+    public int numberOfDiscounts() {
+        return this.discounts.size();
     }
 }

@@ -1,9 +1,12 @@
 package discounts;
 
-public class Bogof implements Discounts {
+import basket.Basket;
+import basket.Item;
+
+public class Bogof implements Discount {
 
     @Override
-    public void applyDiscount() {
+    public void applyDiscount(Basket basket) {
 
     }
 }

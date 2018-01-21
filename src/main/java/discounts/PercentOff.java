@@ -1,8 +1,11 @@
 package discounts;
 
-public class PercentOff implements Discounts {
+import basket.Basket;
+
+public class PercentOff implements Discount {
+
     @Override
-    public void applyDiscount() {
-        
+    public void applyDiscount(Basket basket) {
+
     }
 }
