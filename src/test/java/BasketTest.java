@@ -1,3 +1,5 @@
+import basket.Basket;
+import basket.Item;
 import org.junit.Before;
 import org.junit.Test;
 
