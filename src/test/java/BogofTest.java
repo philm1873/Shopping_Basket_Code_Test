@@ -6,11 +6,12 @@ import discounts.PercentOff;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class BogofTest {
     private Basket testBasket;
     private Item testItemOne;
     private Item testItemTwo;
-    private Item testItemThree;
     private Bogof testBogofOne;
     private LoyaltyCard testLoyaltyCardOne;
     private PercentOff testPercentOffOne;
@@ -20,10 +21,9 @@ public class BogofTest {
         testBasket = new Basket();
         testItemOne = new Item("Burger", 2.75, true);
         testItemTwo = new Item("Cheese", 1.50, false);
-        testItemThree = new Item("Burger", 2.75, true);
         testBasket.AddItemToBasket(testItemOne);
         testBasket.AddItemToBasket(testItemTwo);
-        testBasket.AddItemToBasket(testItemThree);
+        testBasket.AddItemToBasket(testItemOne);
         testBogofOne = new Bogof();
         testLoyaltyCardOne = new LoyaltyCard();
         testPercentOffOne = new PercentOff();
@@ -33,7 +33,19 @@ public class BogofTest {
     }
 
     @Test
-    public void canApplyDiscount() {
+    public void canApplyDiscountTwoBurgers() {
+        assertEquals(4.25, testBogofOne.applyDiscount(testBasket.getItems(), testBasket.getTotal()), 0.01);
+    }
 
+    @Test
+    public void canApplyDiscountThreeBurgers() {
+        testBasket.AddItemToBasket(testItemOne);
+        assertEquals(7.0, testBogofOne.applyDiscount(testBasket.getItems(), testBasket.getTotal()), 0.01);
+    }
+
+    @Test
+    public void noDiscountApplied() {
+        testBasket.removeItemFromBasket(testItemOne);
+        assertEquals(4.25, testBogofOne.applyDiscount(testBasket.getItems(), testBasket.getTotal()), 0.01);
     }
 }

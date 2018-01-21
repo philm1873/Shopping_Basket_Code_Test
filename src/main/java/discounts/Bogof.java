@@ -5,21 +5,22 @@ import basket.Item;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Set;
 
 public class Bogof implements IDiscount {
 
     @Override
     public double applyDiscount(ArrayList<Item> items, double total) {
-        HashSet<Item> bogofItems = getItemsThatAreBogof(items);
+        Set<Item> bogofItems = getItemsThatAreBogof(items);
         for (Item item : bogofItems) {
             int occurrenceBogofItem = Collections.frequency(items, item);
-            total -= occurrenceBogofItem/2 * item.getPrice();
+            total -= (occurrenceBogofItem/2) * item.getPrice();
         }
         return total;
     }
 
-    private HashSet<Item> getItemsThatAreBogof(ArrayList<Item> items) {
-        HashSet<Item> bogofItems = new HashSet<>();
+    private Set<Item> getItemsThatAreBogof(ArrayList<Item> items) {
+        Set<Item> bogofItems = new HashSet<>();
         for (Item item : items) {
             if (item.isBogof()) {
                 bogofItems.add(item);
