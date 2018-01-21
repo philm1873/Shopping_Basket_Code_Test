@@ -22,4 +22,13 @@ public class BasketTest {
         testBasket.AddItemToBasket(testItemTwo);
         assertEquals(2, testBasket.numberOfItemsInBasket());
     }
+
+    @Test
+    public void canRemoveItemFromBasket() {
+        testBasket.AddItemToBasket(testItemOne);
+        testBasket.AddItemToBasket(testItemTwo);
+        assertEquals(2, testBasket.numberOfItemsInBasket());
+        testBasket.removeItemFromBasket(testItemTwo);
+        assertEquals(1, testBasket.numberOfItemsInBasket());
+    }
 }
