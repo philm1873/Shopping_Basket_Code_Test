@@ -17,4 +17,15 @@ public class LoyaltyCard implements IDiscount {
     public int hashCode() {
         return LoyaltyCard.class.hashCode();
     }
+
+    @Override
+    public int compareTo(IDiscount object) {
+        if (object instanceof Bogof) {
+            return 1;
+        }
+        if (object instanceof PercentOff) {
+            return 1;
+        }
+        return 0;
+    }
 }

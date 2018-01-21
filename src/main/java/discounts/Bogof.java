@@ -12,7 +12,6 @@ public class Bogof implements IDiscount {
     @Override
     public void applyDiscount(Basket basket) {
         ArrayList<Item> bogofItems = getItemsThatAreBogof(basket.getItems());
-
     }
 
     private ArrayList<Item> getItemsThatAreBogof(ArrayList<Item> items) {
@@ -41,5 +40,16 @@ public class Bogof implements IDiscount {
     @Override
     public int hashCode() {
         return Bogof.class.hashCode();
+    }
+
+    @Override
+    public int compareTo(IDiscount object) {
+        if (object instanceof LoyaltyCard) {
+            return -1;
+        }
+        if (object instanceof PercentOff) {
+            return -1;
+        }
+        return 0;
     }
 }

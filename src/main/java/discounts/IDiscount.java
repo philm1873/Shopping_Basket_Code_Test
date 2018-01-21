@@ -2,7 +2,7 @@ package discounts;
 
 import basket.Basket;
 
-public interface IDiscount {
+public interface IDiscount extends Comparable<IDiscount> {
 
     void applyDiscount(Basket basket);
 

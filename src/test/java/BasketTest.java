@@ -92,4 +92,13 @@ public class BasketTest {
         testBasket.addDiscount(testPercentOffTwo);
         assertEquals(1, testBasket.numberOfDiscounts());
     }
+
+    @Test
+    public void discountsOrdered() {
+        testBasket.addDiscount(testPercentOffOne);
+        testBasket.addDiscount(testBogofOne);
+        testBasket.addDiscount(testLoyaltyCardOne);
+        assertEquals(testBogofOne, testBasket.getDiscounts().first());
+        assertEquals(testLoyaltyCardOne, testBasket.getDiscounts().last());
+    }
 }

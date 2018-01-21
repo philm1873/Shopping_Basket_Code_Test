@@ -4,20 +4,25 @@ import discounts.*;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.TreeSet;
 
 public class Basket {
     private ArrayList<Item> items;
-    private HashSet<IDiscount> discounts;
+    private TreeSet<IDiscount> discounts;
     private double total;
 
 
     public Basket() {
         items = new ArrayList<>();
-        discounts = new HashSet<>();
+        discounts = new TreeSet<>();
     }
 
     public ArrayList<Item> getItems() {
         return items;
+    }
+
+    public TreeSet<IDiscount> getDiscounts() {
+        return discounts;
     }
 
     public double getTotal() {
