@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class LoyaltyCard implements IDiscount {
     @Override
     public double applyDiscount(ArrayList<Item> items, double total) {
-        return total;
+        return total * 0.98;
     }
 
     @Override

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38976608-fe1a-4be4-9e26-d22b92cf6a40" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/BogofTest.class" afterPath="$PROJECT_DIR$/out/test/classes/BogofTest.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/discounts/Bogof.java" afterPath="$PROJECT_DIR$/src/main/java/discounts/Bogof.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BogofTest.java" afterPath="$PROJECT_DIR$/src/test/java/BogofTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/discounts/IDiscount.java" afterPath="$PROJECT_DIR$/src/main/java/discounts/IDiscount.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/discounts/LoyaltyCard.java" afterPath="$PROJECT_DIR$/src/main/java/discounts/LoyaltyCard.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -71,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BogofTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BogofTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BogofTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="47" column="53" lean-forward="false" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+            <state relative-caret-position="48">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,16 +100,28 @@
       <file leaf-file-name="LoyaltyCard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/discounts/LoyaltyCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="110">
+              <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#294#295#0" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoyaltyCardTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/LoyaltyCardTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="27" column="111" lean-forward="false" selection-start-line="27" selection-start-column="111" selection-end-line="27" selection-end-column="111" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,8 +148,8 @@
       <file leaf-file-name="IDiscount.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/discounts/IDiscount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="180">
+              <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -473,13 +483,14 @@
         <option value="$PROJECT_DIR$/src/main/java/discounts/Discounts.java" />
         <option value="$PROJECT_DIR$/src/main/java/discounts/Discount.java" />
         <option value="$PROJECT_DIR$/src/main/java/basket/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/discounts/IDiscount.java" />
         <option value="$PROJECT_DIR$/src/main/java/discounts/PercentOff.java" />
-        <option value="$PROJECT_DIR$/src/main/java/discounts/LoyaltyCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/basket/Basket.java" />
         <option value="$PROJECT_DIR$/src/test/java/BasketTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/discounts/Bogof.java" />
+        <option value="$PROJECT_DIR$/src/main/java/discounts/IDiscount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/discounts/LoyaltyCard.java" />
         <option value="$PROJECT_DIR$/src/test/java/BogofTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LoyaltyCardTest.java" />
       </list>
     </option>
   </component>
@@ -584,7 +595,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BogofTest.noDiscountApplied">
+  <component name="RunManager" selected="JUnit.LoyaltyCardTest.canApplyDiscount">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -604,26 +615,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="BasketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="ShoppingBasket_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration name="BogofTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -705,6 +696,26 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="LoyaltyCardTest.canApplyDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ShoppingBasket_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoyaltyCardTest" />
+      <option name="METHOD_NAME" value="canApplyDiscount" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -766,19 +777,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BasketTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscount" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountThreeBurgers" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BogofTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BogofTest.noDiscountApplied" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscount" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountThreeBurgers" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BogofTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BogofTest.noDiscountApplied" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LoyaltyCardTest.canApplyDiscount" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BogofTest.noDiscountApplied" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BogofTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountThreeBurgers" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscount" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BasketTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LoyaltyCardTest.canApplyDiscount" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BogofTest.noDiscountApplied" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BogofTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountThreeBurgers" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscount" />
       </list>
     </recent_temporary>
   </component>
@@ -801,9 +812,6 @@
   <component name="TestHistory">
     <history-entry file="BogofTest - 2018.01.21 at 17h 24m 19s.xml">
       <configuration name="BogofTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BogofTest_canApplyDiscount - 2018.01.21 at 17h 01m 59s.xml">
-      <configuration name="BogofTest.canApplyDiscount" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BogofTest_canApplyDiscount - 2018.01.21 at 17h 03m 23s.xml">
       <configuration name="BogofTest.canApplyDiscount" configurationId="JUnit" />
@@ -828,6 +836,9 @@
     </history-entry>
     <history-entry file="BogofTest_noDiscountApplied - 2018.01.21 at 17h 26m 50s.xml">
       <configuration name="BogofTest.noDiscountApplied" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoyaltyCardTest_canApplyDiscount - 2018.01.21 at 17h 42m 08s.xml">
+      <configuration name="LoyaltyCardTest.canApplyDiscount" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -890,10 +901,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/discounts/IDiscount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="180">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -912,60 +933,6 @@
             <element signature="e#338#339#0" expanded="true" />
             <element signature="e#381#382#0" expanded="true" />
             <element signature="e#431#432#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/discounts/LoyaltyCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/discounts/Bogof.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1022#1023#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/basket/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -993,10 +960,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/basket/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/discounts/Bogof.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/discounts/LoyaltyCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BogofTest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LoyaltyCardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
-          <caret line="47" column="53" lean-forward="false" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+          <caret line="27" column="111" lean-forward="false" selection-start-line="27" selection-start-column="111" selection-end-line="27" selection-end-column="111" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
